@@ -1,4 +1,6 @@
-﻿namespace Levels
+﻿using UnityEngine;
+
+namespace Levels
 {
     public class NormalLevelFinisher : LevelFinisher
     {

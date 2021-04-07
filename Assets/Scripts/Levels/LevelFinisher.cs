@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace Levels
 {
+    [RequireComponent(typeof(AudioSource))]
     public abstract class LevelFinisher : MonoBehaviour
     {
         [SerializeField] private ParticleSystem[] _effects;

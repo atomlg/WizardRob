@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Coins
 {
+    [RequireComponent(typeof(AudioSource))]
     public class CoinsCollector : MonoBehaviour
     {
         private int  _maxCoinsOnLevel;

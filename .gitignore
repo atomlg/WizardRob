@@ -1,22 +1,15 @@
-# Add any directories, files, or patterns you don't want to be tracked by version control
-src/KnowledgeIsPower/.vs
-
-src/KnowledgeIsPower/Temp
-
-src/KnowledgeIsPower/Library
-src/KnowledgeIsPower/.idea
-src/KnowledgeIsPower/Assembly-CSharp.csproj
-src/KnowledgeIsPower/Assembly-CSharp-Editor.csproj
-src/KnowledgeIsPower/KnowledgeIsPower.sln
-src/KnowledgeIsPower/KnowledgeIsPower.csproj
-src/KnowledgeIsPower/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
-
-src/KnowledgeIsPower/obj
-
+Temp
+Library
+.idea
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+KnowledgeIsPower.sln
+KnowledgeIsPower.csproj
+Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
+obj
 .vs
 /builds
-src/KnowledgeIsPower/Assets/Plugins/Editor/JetBrains
-
+Assets/Plugins/Editor/JetBrains
 *.csproj
 
 # Build related

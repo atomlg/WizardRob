@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace Levels
 {
+    [RequireComponent(typeof(AudioSource))]
     public class InputHandler : MonoBehaviour
     {
         private const float Radius = 3f;

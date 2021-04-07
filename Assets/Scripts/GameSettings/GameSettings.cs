@@ -6,12 +6,8 @@ using UnityEngine.UI;
 
 namespace GameSettings
 {
-    public class GameSettings : MonoBehaviour
+    public partial class GameSettings : MonoBehaviour
     {
-        private const string GlobalVolume = "GlobalVolume";
-        private const string MusicVolume = "MusicVolume";
-        private const string EffectsVolume = "EffectsVolume";
-
         [SerializeField] private AudioMixerGroup _mixer;
         [SerializeField] private Slider _globalVolumeSlider;
         [SerializeField] private Slider _musicVolumeSlider;
@@ -68,27 +64,27 @@ namespace GameSettings
             _musicVolumeSlider.value = gameVolume.MusicVolume;
             _effectsVolumeSlider.value = gameVolume.EffectsVolume;
 
-            _mixer.audioMixer.SetFloat(GlobalVolume, gameVolume.GlobalVolume);
-            _mixer.audioMixer.SetFloat(MusicVolume, gameVolume.MusicVolume);
-            _mixer.audioMixer.SetFloat(EffectsVolume, gameVolume.EffectsVolume);
+            _mixer.audioMixer.SetFloat(AudioMixerExposedParametersNames.GlobalVolume, gameVolume.GlobalVolume);
+            _mixer.audioMixer.SetFloat(AudioMixerExposedParametersNames.MusicVolume, gameVolume.MusicVolume);
+            _mixer.audioMixer.SetFloat(AudioMixerExposedParametersNames.EffectsVolume, gameVolume.EffectsVolume);
         }
 
         private void ChangeGlobalVolume(float value)
         {
             _globalVolume = value;
-            SetMixerVolume(GlobalVolume, _globalVolume);
+            SetMixerVolume(AudioMixerExposedParametersNames.GlobalVolume, _globalVolume);
         }
 
         private void ChangeMusicVolume(float value)
         {
             _musicVolume = value;
-            SetMixerVolume(MusicVolume, _musicVolume);
+            SetMixerVolume(AudioMixerExposedParametersNames.MusicVolume, _musicVolume);
         }
 
         private void ChangeEffectsVolume(float value)
         {
             _effectsVolume = value;
-            SetMixerVolume(EffectsVolume, _effectsVolume);
+            SetMixerVolume(AudioMixerExposedParametersNames.EffectsVolume, _effectsVolume);
         }
 
         private void SetMixerVolume(string mixerName, float volume)

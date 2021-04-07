@@ -2,6 +2,7 @@
 
 namespace Traps
 {
+    [RequireComponent(typeof(SpriteRenderer))]
     public class BossTrapHealth : TrapHealth
     {
         [SerializeField] private Sprite[] _statesSprite;

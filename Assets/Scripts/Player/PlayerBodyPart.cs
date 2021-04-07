@@ -5,6 +5,11 @@ using UnityEngine;
 
 namespace Player
 {
+    [RequireComponent(typeof(SpriteRenderer))]
+    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(HingeJoint2D))]
+    [RequireComponent(typeof(Rigidbody2D))]
+    
     public class PlayerBodyPart : MonoBehaviour
     {
         private PlayerHealth _playerHealth;

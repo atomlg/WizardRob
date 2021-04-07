@@ -3,12 +3,13 @@ using UnityEngine;
 
 namespace Player
 {
+    [RequireComponent(typeof(AudioSource))]
     public class PlayerHealth : MonoBehaviour
     {
         private const int MaxHealth = 6;
-        
+
         [SerializeField] private AudioClip _dyingAudio;
-        
+
         private int _currentHealth;
         private AudioSource _audioSource;
 
@@ -48,7 +49,7 @@ namespace Player
         {
             _audioSource.clip = audioClip;
         }
-        
+
         private void Die()
         {
             SetAudiClip(_dyingAudio);
