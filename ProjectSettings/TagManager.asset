@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - FxTemporaire
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Trap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2336109989
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Flag
+    uniqueID: 1307102995
+    locked: 0
+  - name: Coins
+    uniqueID: 3119470745
+    locked: 0
+  - name: Player
+    uniqueID: 4180004153
+    locked: 0
+  - name: Well
+    uniqueID: 3918688139
+    locked: 0
+  - name: Static
+    uniqueID: 3615429015
+    locked: 0
+  - name: Traps
+    uniqueID: 2755857417
+    locked: 0
